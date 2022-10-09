@@ -1,13 +1,13 @@
 // array vinilos
 const vinilos = [
-    { id: 1, nombre: "Circles", autor: "Mac Miller", anio: "2020", precio: 2900, img: "" },
-    { id: 2, nombre: "To Pimp A Butterfly", autor: "Kendrick Lamar", anio: "2015", precio: 3700, img: "" },
-    { id: 3, nombre: "The Divine Feminine", autor: "Mac Miller", anio: "2016", precio: 4500, img: "" },
-    { id: 4, nombre: "Graduation", autor: "Kanye West", anio: "2007", precio: 1500, img: "" },
-    { id: 5, nombre: "DAMN", autor: "Kendrick Lamar", anio: "2017", precio: 7300, img: "" },
-    { id: 6, nombre: "Madvillainy", autor: "MF DOOM", anio: "2004", precio: 2200, img: "" },
-    { id: 7, nombre: "MM... FOOD", autor: "MF DOOM", anio: "2004", precio: 2900, img: "" },
-    { id: 8, nombre: "IGOR", autor: "Tyler, The Creator", anio: "2019", precio: 1800, img: "" },
+    { id: 1, nombre: "circles", autor: "mac miller", anio: "2020", precio: 2900, img: "" },
+    { id: 2, nombre: "to pimp a butterfly", autor: "kendrick lamar", anio: "2015", precio: 3700, img: "" },
+    { id: 3, nombre: "the divine feminine", autor: "mac miller", anio: "2016", precio: 500, img: "" },
+    { id: 4, nombre: "graduation", autor: "kanye west", anio: "2007", precio: 1500, img: "" },
+    { id: 5, nombre: "damn.", autor: "kendrick lamar", anio: "2017", precio: 7300, img: "" },
+    { id: 6, nombre: "madvillainy", autor: "mf doom", anio: "2004", precio: 2200, img: "" },
+    { id: 7, nombre: "mm... food", autor: "mf doom", anio: "2004", precio: 2900, img: "" },
+    { id: 8, nombre: "igor", autor: "tyler, the creator", anio: "2019", precio: 800, img: "" },
 ];
 
 function Vinilo(id, nombre, autor, anio, precio, img) {
@@ -32,4 +32,4 @@ function filtrar(arr, filtro, param) {
 let tipoFiltro = prompt("escriba si quiere filtrar por PRECIO o por NOMBRE");
 let filtro = prompt("escriba lo que quiera filtrar");
 
-console.log(filtrar(vinilos, filtro, tipoFiltro));
+console.log(filtrar(vinilos, filtro.toLowerCase(), tipoFiltro));
