@@ -19,27 +19,6 @@ function Vinilo(id, nombre, autor, anio, precio, img) {
     this.img = img;
 }
 
-/* function filtrarVinilos(arr, filtro) {
-    const filtrado = arr.filter((vinilo) => {
-        return vinilo.nombre.includes(filtro);
-    });
-    return filtrado;
-}
-
-function filtrarPorPrecio(arr, filtro) {
-    const filtrado = arr.filter((servicio) => {
-        return servicio.precio >= filtro;
-    });
-    return filtrado;
-}
-
-let porNombre = prompt("Ingresa una letra para buscar un vinilo");
-let porPrecio = prompt("ingresa un numero para buscar un vinilo");
-
-console.log(filtrarVinilos())
-console.log
- */
-
 function filtrar(arr, filtro, param) {
     return arr.filter((el) => {
         if (param == "precio") {
