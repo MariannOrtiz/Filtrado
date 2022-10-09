@@ -29,7 +29,7 @@ function filtrar(arr, filtro, param) {
     });
 }
 
-let tipoFiltro = prompt("escriba si quiere filtrar por PRECIO, NOMBRE, AUTOR o ANIO.");
+let tipoFiltro = prompt("filtrar por PRECIO, NOMBRE, AUTOR o ANIO.");
 let filtro = prompt("escriba lo que quiera filtrar");
 
 console.log(filtrar(vinilos, filtro.toLowerCase(), tipoFiltro));
